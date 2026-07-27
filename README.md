@@ -18,64 +18,288 @@ If you are developing a production application, we recommend using TypeScript wi
 
 <div align="center">
 
-# 🚀 SkillSync AI
+# SkillSync AI
 
-### **Embedding-Powered Semantic Recruitment Platform**
+### Embedding-Powered Semantic Recruitment Platform
 
-*Revolutionizing hiring through Semantic AI, Vector Embeddings, and Intelligent Resume Matching.*
+AI-powered resume analysis, semantic job matching, and intelligent candidate ranking using vector embeddings.
 
-<br>
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss)
-![AI](https://img.shields.io/badge/AI-Semantic%20Search-blueviolet?style=for-the-badge)
-![Embeddings](https://img.shields.io/badge/Vector-Embeddings-orange?style=for-the-badge)
-
----
-
-### 🧠 *"Moving Beyond Keyword Matching to True Semantic Understanding."*
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-blue?style=flat-square)
+![Semantic Search](https://img.shields.io/badge/Semantic-Embeddings-purple?style=flat-square)
 
 </div>
 
 ---
 
-# 📖 About SkillSync AI
+# Overview
 
-SkillSync AI is a next-generation AI-powered recruitment platform designed to modernize the hiring process through **Semantic Search** and **Vector Embeddings**.
+SkillSync AI is an AI-powered recruitment platform that enhances hiring through **semantic search** and **vector embeddings**.
 
-Unlike traditional Applicant Tracking Systems (ATS), which depend heavily on keyword matching, SkillSync AI understands the **context and meaning** behind resumes and job descriptions. By converting both into embeddings and measuring semantic similarity, the platform identifies candidates whose skills and experience genuinely align with job requirements.
+Unlike traditional Applicant Tracking Systems (ATS) that rely on keyword matching, SkillSync AI understands the contextual meaning of resumes and job descriptions. By transforming candidate profiles and job descriptions into vector embeddings and comparing them using cosine similarity, the platform delivers intelligent, explainable, and context-aware candidate recommendations.
 
-The platform provides an intelligent ecosystem where students receive AI-driven resume insights and personalized job recommendations, while recruiters gain access to explainable candidate rankings based on contextual relevance instead of simple keyword frequency.
-
----
-
-# 🎯 Problem Statement
-
-Most recruitment platforms rely on **keyword-based filtering**, which often overlooks highly qualified candidates simply because they use different wording in their resumes.
-
-This results in:
-
-- ❌ Low-quality candidate matching
-- ❌ Manual resume screening
-- ❌ Keyword dependency
-- ❌ Missed opportunities for both recruiters and applicants
+The application provides separate workflows for students and recruiters, integrating AI-powered resume analysis, semantic job matching, resume storage, and intelligent applicant ranking into a unified recruitment platform.
 
 ---
 
-# 💡 Our Solution
+# Motivation
 
-SkillSync AI introduces an **Embedding-Based Semantic Recruitment System** that understands the meaning of resumes and job descriptions instead of just matching identical words.
+Conventional recruitment systems often struggle to identify suitable candidates because they depend heavily on exact keyword matching. This approach may overlook qualified applicants whose resumes use different terminology despite having relevant skills and experience.
 
-### The platform combines:
+SkillSync AI addresses this limitation by introducing semantic understanding into the recruitment process, enabling recruiters to discover candidates based on contextual relevance rather than identical keywords.
 
-- 🧠 Semantic AI
-- 📄 Intelligent Resume Analysis
-- 🔍 Context-Aware Job Matching
-- 📊 AI Candidate Ranking
-- 📈 Explainable Hiring Recommendations
-- ⚡ Vector Embedding Similarity
+---
 
-This enables recruiters to discover the most relevant candidates while helping students identify opportunities that truly match their skills and career goals.
+# Proposed Solution
+
+SkillSync AI combines Large Language Models, vector embeddings, and cosine similarity to create an intelligent recruitment pipeline.
+
+```
+Resume PDF
+      │
+      ▼
+Resume Parsing
+      │
+      ▼
+Text Extraction
+      │
+      ▼
+Embedding Generation
+      │
+      ▼
+Semantic Similarity
+      │
+      ▼
+Match Score
+      │
+      ▼
+AI Recommendation
+      │
+      ▼
+HR Dashboard
+```
+
+---
+
+# System Architecture
+
+```
+                 React Frontend
+                        │
+                        ▼
+                 Express.js API
+        ┌───────────────┼────────────────┐
+        │               │                │
+        ▼               ▼                ▼
+     MongoDB       OpenRouter AI     Supabase Storage
+        │
+        ▼
+   Embedding Engine
+        │
+        ▼
+  Cosine Similarity
+        │
+        ▼
+ Semantic Candidate Ranking
+```
+
+---
+
+# Core Features
+
+## Student Portal
+
+- Student authentication using JWT
+- Resume upload and cloud storage
+- AI-powered resume analysis
+- Resume quality scoring
+- Semantic job recommendations
+- Apply for jobs
+- Profile management
+
+## Recruiter Portal
+
+- Recruiter authentication
+- Create, edit and delete job postings
+- View applicants
+- AI-powered candidate ranking
+- Accept or reject applications
+- Semantic hiring recommendations
+
+## AI Engine
+
+- Resume parsing
+- Semantic embeddings
+- Cosine similarity matching
+- Resume summarization
+- Resume scoring
+- Explainable AI recommendations
+
+---
+
+# Technology Stack
+
+| Layer | Technology |
+|--------|------------|
+| Frontend | React, Vite, Tailwind CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB |
+| Authentication | JWT |
+| AI Models | OpenRouter |
+| Embedding Engine | Hugging Face Embeddings |
+| Storage | Supabase Storage |
+| Matching Algorithm | Cosine Similarity |
+
+---
+
+# Project Structure
+
+```
+skillsync-ai/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   └── server.js
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── pages/
+│   ├── routes/
+│   ├── services/
+│   └── main.jsx
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/skillsync-ai.git
+```
+
+Navigate into the project
+
+```bash
+cd skillsync-ai
+```
+
+Install frontend dependencies
+
+```bash
+npm install
+```
+
+Install backend dependencies
+
+```bash
+cd backend
+npm install
+```
+
+Start the backend
+
+```bash
+npm run dev
+```
+
+Start the frontend
+
+```bash
+cd ..
+npm run dev
+```
+
+---
+
+# Environment Variables
+
+Create a `.env` file inside the `backend` directory.
+
+```env
+PORT=
+
+MONGODB_URI=
+
+JWT_SECRET=
+
+SUPABASE_URL=
+
+SUPABASE_ANON_KEY=
+
+OPENROUTER_API_KEY=
+
+HUGGINGFACE_API_KEY=
+```
+
+Never commit your `.env` file to GitHub.
+
+---
+
+# Screenshots
+
+> Screenshots will be added after deployment.
+
+- Landing Page
+- Student Dashboard
+- Resume Analysis
+- Available Jobs
+- HR Dashboard
+- Applicant Ranking
+- Job Management
+
+---
+
+# Future Enhancements
+
+- AI Interview Copilot
+- Resume ATS Optimisation
+- Recruiter Analytics Dashboard
+- Skill Gap Analysis
+- Interview Scheduling
+- Email Notifications
+- Multi-language Resume Analysis
+- Retrieval-Augmented Generation (RAG) for candidate recommendations
+
+---
+
+# Author
+
+**Kashish Singh**
+
+B.Tech Computer Science Engineering
+
+Interests:
+- Artificial Intelligence
+- Semantic Search
+- Machine Learning
+- Full-Stack Development
+- Vector Embeddings
+
+GitHub:
+https://github.com/kashish-Singh25
+
+---
+
+# License
+
+This project is intended for educational, research, and portfolio purposes.
