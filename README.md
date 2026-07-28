@@ -33,6 +33,14 @@ AI-powered resume analysis, semantic job matching, and intelligent candidate ran
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-AI-blue?style=flat-square)
 ![Semantic Search](https://img.shields.io/badge/Semantic-Embeddings-purple?style=flat-square)
 
+## Live Demo
+
+Frontend:
+https://skillsync-ai-2-nfh0.onrender.com
+
+Backend API:
+https://backend-skillsync-ai-2.onrender.com
+
 </div>
 
 ---

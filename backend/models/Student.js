@@ -168,10 +168,18 @@ const studentSchema = new mongoose.Schema(
           default: [],
         },
       
-        suggestions: {
-            type: [String],
-            default: [],
-          },
+        suggestions: [
+            {
+              suggestion: {
+                type: String,
+                default: "",
+              },
+              rationale: {
+                type: String,
+                default: "",
+              },
+            },
+          ],
       
         summary: {
           type: String,

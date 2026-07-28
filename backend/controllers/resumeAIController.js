@@ -79,8 +79,12 @@ ${student.linkedin}
 
 Suggestions:
 ${(analysis.suggestions || [])
-  .map((s) => (typeof s === "string" ? s : s.label))
-  .join(", ")}
+  .map((s) =>
+    typeof s === "string"
+      ? s
+      : `${s.suggestion} - ${s.rationale}`
+  )
+  .join("\n")}
 `;
 
 console.log("===== STUDENT PROFILE FOR EMBEDDING =====");
@@ -88,13 +92,13 @@ console.log(profileText);
 
 const embedding = await createEmbedding(profileText);
 
-analysis.suggestions = (analysis.suggestions || []).map((item) => {
-    if (typeof item === "string") {
-      return item;
-    }
+// analysis.suggestions = (analysis.suggestions || []).map((item) => {
+//     if (typeof item === "string") {
+//       return item;
+//     }
   
-    return item.label || item.description || "";
-  });    
+//     return item.label || item.description || "";
+//   });    
 
 
 student.aiAnalysis = analysis;
