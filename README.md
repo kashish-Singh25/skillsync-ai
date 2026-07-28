@@ -265,8 +265,6 @@ Never commit your `.env` file to GitHub.
 
 # Screenshots
 
-# Screenshots
-
 ## Landing Page
 
 ![Landing Page](assets/screenshots/Landing%20page.png)
