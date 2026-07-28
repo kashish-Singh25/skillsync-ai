@@ -265,16 +265,47 @@ Never commit your `.env` file to GitHub.
 
 # Screenshots
 
-> Screenshots will be added after deployment.
+# Screenshots
 
-- Landing Page
-- Student Registration
-- Hr Register
-- Student Dashboard
-- HR Dashboard
-- Resume Analysis
-- Semantic Matching
+## Landing Page
 
+![Landing Page](assets/screenshots/Landing%20page.png)
+
+---
+
+## Student Registration
+
+![Student Registration](assets/screenshots/Student%20Registration.png)
+
+---
+
+## HR Registration
+
+![HR Register](assets/screenshots/Hr%20Register.png)
+
+---
+
+## Student Dashboard
+
+![Student Dashboard](assets/screenshots/Student%20Dashboard.png)
+
+---
+
+## HR Dashboard
+
+![HR Dashboard](assets/screenshots/HR%20Dashboard.png)
+
+---
+
+## Resume Analysis
+
+![Resume Analysis](assets/screenshots/Resume%20Analysis.png)
+
+---
+
+## Semantic Matching
+
+![Semantic Matching](assets/screenshots/Semantic%20Matching.png)
 ---
 
 # Future Enhancements
