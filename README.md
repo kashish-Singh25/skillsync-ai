@@ -268,12 +268,12 @@ Never commit your `.env` file to GitHub.
 > Screenshots will be added after deployment.
 
 - Landing Page
+- Student Registration
+- Hr Register
 - Student Dashboard
-- Resume Analysis
-- Available Jobs
 - HR Dashboard
-- Applicant Ranking
-- Job Management
+- Resume Analysis
+- Semantic Matching
 
 ---
 
