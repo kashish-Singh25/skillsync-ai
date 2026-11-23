@@ -94,6 +94,15 @@ HR Dashboard
 
 ---
 
+## Key Features
+
+- **AI-Powered Resume Analysis:** Evaluates resumes and provides actionable feedback to improve them.
+- **Semantic Job Matching:** Uses AI-based similarity matching to connect candidates with relevant job opportunities.
+- **Multiple User Roles:** Supports Students, Professionals, and HR Recruiters with role-specific dashboards.
+- **Job Management:** HR recruiters can create and manage job postings.
+- **Application Tracking:** Candidates can apply for jobs and track their application status.
+- **Personalized Recommendations:** Helps candidates identify missing skills and areas for improvement.
+
 # System Architecture
 
 ```
